@@ -1,12 +1,12 @@
 # KL25z_SoC
 
-## For educational purposes.
+For educational purposes.
 
 Tecnologico de Monterrey Campus Guadalajara 2021.
 
 This repository includes different activities implemented on FRDM-KL25Z board.
 
-### Components used.
+## Components used.
 
 1. KL25z
 2. Nodemcu esp8266
