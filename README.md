@@ -36,6 +36,6 @@ Nodemcu esp8266 was programmed on Arduino IDE
 
 ## Team Developer
 
-José Miguel Figarola Prado
-Giancarlo Franco Carrillo
+José Miguel Figarola Prado, 
+Giancarlo Franco Carrillo, 
 Diego Armando Limón de León
