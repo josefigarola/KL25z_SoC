@@ -6,9 +6,9 @@ Tecnologico de Monterrey Campus Guadalajara 2021.
 
 This repository includes different activities implemented on FRDM-KL25Z board.
 
-The Mbed online compiler was used as principal IDE
+The Mbed online compiler was used as principal IDE.
 
-Nodemcu esp8266 was programmed on Arduino IDE
+Nodemcu esp8266 was programmed on Arduino IDE.
 
 ## Components used.
 
