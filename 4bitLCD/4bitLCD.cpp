@@ -1,14 +1,14 @@
  #include "mbed.h"
  #include "TextLCD.h"
- //Miguel Figarola
- //Giancarlo Franco
- //Diego Limon
+ //Miguel Figarola A01632557
+ //Giancarlo Franco A01638108
+ //Diego Limon A01638247
 
  TextLCD lcd(PTD0, PTD2, PTD4, PTD5, PTD6, PTD7); // rs, e, d4-d7
  void delayMs(int n); //delay milisec
  void delayUs(int n); //delay microsec
  void keypad_init(void);
- char keypad_getkey(void); //get value
+ char keypad_getkey(void); // get value
  void LED_init(void);
  void LED_set(int value); //decoder
 
