@@ -4,13 +4,18 @@
  //Giancarlo Franco A01638108
  //Diego Limon A01638247
 
+ // This code displays a menu on the lcd
+ // Pressing 1 is red LED on
+ // Pressing 2 is green LED on
+ // Pressing 3 is blue LED on
+
  TextLCD lcd(PTD0, PTD2, PTD4, PTD5, PTD6, PTD7); // rs, e, d4-d7
- void delayMs(int n); //delay milisec
- void delayUs(int n); //delay microsec
+ void delayMs(int n); // delay milisec
+ void delayUs(int n); // delay microsec
  void keypad_init(void);
  char keypad_getkey(void); // get value
  void LED_init(void);
- void LED_set(int value); //decoder
+ void LED_set(int value); // decoder
 
  int main() {
         unsigned char key;
@@ -23,7 +28,7 @@
             LED_init();
             keypad_init();
             key = keypad_getkey();
-            LED_set(key); //set LEDs according to the key code
+            LED_set(key); // set LEDs according to the key code
         }
  }
 
