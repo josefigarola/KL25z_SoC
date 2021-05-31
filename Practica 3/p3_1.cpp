@@ -1,6 +1,11 @@
+/* Miguel Figarola A01632557
+Giancarlo Franco A01638108
+Diego Limon A01638247*/
+
+
 #include "mbed.h"
 #include "TextLCD.h"
- 
+
 TextLCD lcd(PTD0, PTD2 ,PTD3, PTD4, PTD5, PTD6, PTD7, TextLCD::LCD16x2); // rs, e, d4-d7
 void delayMs(int n); //delay milisec
 void delayUs(int n); //delay microsec
@@ -8,11 +13,11 @@ void keypad_init(void);
 char keypad_getkey(void); //get value
 void LED_init(void);
 void LED_set(int value); //decoder
- 
+
 int main() {
-    unsigned char key; 
-    
-    while(1) {   
+    unsigned char key;
+
+    while(1) {
         lcd.locate(2,0);
         lcd.printf("Press Button");
         lcd.locate(2,1);
@@ -23,7 +28,7 @@ int main() {
         LED_set(key); //set LEDs according to the key code
     }
 }
- 
+
 void keypad_init(void) {
     SIM->SCGC5 |= 0x0800;  /* enable clock to Port C */
     PORTC->PCR[0] = 0x103; /* PTD0, GPIO, enable pullup*/
@@ -96,7 +101,7 @@ char keypad_getkey(void) {
 void LED_set(int value) {
     /* use cases to control leds */
     switch(value) {
-        case 1:  
+        case 1:
             PTB->PCOR = 0x40000;  /* turn on red LED */
             lcd.cls();
             lcd.locate(4,0);
@@ -220,7 +225,7 @@ void LED_set(int value) {
             break;
     }
 }
- 
+
  /* Delay n milliseconds
 The CPU core clock is set to MCGFLLCLK at
 41.94 MHz in SystemInit(). */
