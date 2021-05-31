@@ -1,6 +1,10 @@
 /* Implementacion para la parte 1 de la practica 3, segun la tecla que presionemos en
 el teclado, se desplegara a la LCD un valor unico segun nuestro decoder*/
 
+/* Miguel Figarola A01632557
+Giancarlo Franco A01638108
+Diego Limon A01638247*/
+
 #include "mbed.h"
 #include "TextLCD.h"
 #include "Keypad.h"
@@ -50,16 +54,16 @@ int main()
         }//we get out of the cicle when user press # or *
         //once here we call our timer
         counter(cont);
-        PTB->PCOR = 0x40000; /*turn on red led*/    
+        PTB->PCOR = 0x40000; /*turn on red led*/
         lcd.cls();
         lcd.locate(0,0);
         lcd.printf("Time's up");
         buzzer.period(1/float(c)); // set PWM period
         buzzer = 0.5;// set duty cycle
         wait(0.5);
-        buzzer.period(1/float(d));// set PWM period  
+        buzzer.period(1/float(d));// set PWM period
         buzzer = 0.5;// set duty cycle
-        wait(0.5);  
+        wait(0.5);
         delayMs(2000);
         PTB->PSOR = 0x40000; /*turn off red led*/
         lcd.cls();
