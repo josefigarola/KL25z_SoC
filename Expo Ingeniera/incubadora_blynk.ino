@@ -41,12 +41,12 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "bPxgi8Uem3ltZSNEI8s3ad4Efk8wOSu_";
+char auth[] = "   ";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "COM-818";
-char pass[] = "0398B757";
+char ssid[] = " ";
+char pass[] = " ";
 
 #define DHTPIN 0 //GPIO0      
 #define POTPIN A0 //GPIO16
@@ -75,10 +75,10 @@ void sendSensor()
   //int randomNumber = random(90,215);
   
   if(mappedvalue < 100){
-    Blynk.email("jmfigarolaprado2@gmail.com","LPM","LPM menor a 90");
+    Blynk.email("xx@mail.com","LPM","LPM menor a 90");
   }
   if(mappedvalue > 205){
-    Blynk.email("jmfigarolaprado2@gmail.com","LPM","LPM mayor a 215");
+    Blynk.email("xx@mail.com","LPM","LPM mayor a 215");
   }
   
   if (isnan(h) || isnan(t)) {
@@ -118,8 +118,3 @@ void loop()
 /* You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
 char auth[] = "bPxgi8Uem3ltZSNEI8s3ad4Efk8wOSu_";
-
-// Your WiFi credentials.
-// Set password to "" for open networks.
-char ssid[] = "IZZI-AF68";
-char pass[] = "uahRAQYG";*/
